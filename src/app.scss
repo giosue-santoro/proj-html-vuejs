@@ -2,6 +2,7 @@
 @import "./navbar";
 @import "./slider";
 
+/* MAIN SECTION */
 .main-section {
   .first-row {
     display: flex;
@@ -19,7 +20,9 @@
     }
   }
 }
+/* MAIN SECTION */
 
+/* SECOND SECTION */
 .second-section {
   background-image: url("../img/svg-3.svg");
   background-size: 75vw;
@@ -53,7 +56,8 @@
         height: 200px;
         background-color: #faf7f1;
         border-radius: 50%;
-        left: 15%;
+        margin: 0 auto;
+
         i {
           position: absolute;
           top: 50%;
@@ -85,7 +89,8 @@
         height: 200px;
         background-color: #faf7f1;
         border-radius: 50%;
-        left: 15%;
+        margin: 0 auto;
+
         i {
           position: absolute;
           top: 50%;
@@ -117,7 +122,8 @@
         height: 200px;
         background-color: #faf7f1;
         border-radius: 50%;
-        left: 15%;
+        margin: 0 auto;
+
         i {
           position: absolute;
           top: 50%;
@@ -149,7 +155,8 @@
         height: 200px;
         background-color: #faf7f1;
         border-radius: 50%;
-        left: 15%;
+        margin: 0 auto;
+
         i {
           position: absolute;
           top: 50%;
@@ -172,3 +179,206 @@
     }
   }
 }
+/* SECOND SECTION */
+
+/* THIRD SECTION */
+.third-section {
+  @include flexCenter;
+  height: 500px;
+  background-color: #faf7f1;
+
+  &-content {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 60px;
+      span {
+        @include differentFont;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 20px;
+      color: #878787;
+      margin-top: 20px;
+    }
+
+    button {
+      margin-top: 40px;
+      width: 200px;
+      outline: none;
+      border: none;
+      background-color: #d8f0e3;
+      font-weight: bold;
+      padding: 20px;
+      cursor: pointer;
+      letter-spacing: 5px;
+    }
+  }
+}
+/* THIRD SECTION */
+
+/* FOURTH SECTION */
+.fourth-section {
+  height: 700px;
+  @include flexCenter;
+
+  &-box-1 {
+    position: relative;
+    height: 60%;
+    width: 25vw;
+    margin-right: 20px;
+
+    img {
+      height: 75%;
+    }
+
+    h3 {
+      font-size: 25px;
+      margin-top: 10px;
+    }
+
+    p {
+      font-style: italic;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .tab {
+      position: absolute;
+      top: -10%;
+      left: 10%;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      width: 20%;
+
+      &-upper {
+        @include flexCenter;
+        background-color: #c0e1cf;
+        height: 50px;
+
+        span {
+          font-family: "Fondamento", cursive;
+          font-size: 35px;
+        }
+      }
+
+      &-lower {
+        @include flexCenter;
+        background-color: #f3d0c7;
+        height: 45px;
+
+        span {
+          font-weight: bold;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+
+  &-box-2 {
+    position: relative;
+    height: 60%;
+    width: 25vw;
+    margin-right: 20px;
+
+    img {
+      height: 75%;
+    }
+
+    h3 {
+      font-size: 25px;
+      margin-top: 10px;
+    }
+
+    p {
+      font-style: italic;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .tab-2 {
+      position: absolute;
+      top: -10%;
+      left: 10%;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      width: 20%;
+
+      &-upper {
+        @include flexCenter;
+        background-color: #c0e1cf;
+        height: 50px;
+
+        span {
+          font-family: "Fondamento", cursive;
+          font-size: 35px;
+        }
+      }
+
+      &-lower {
+        @include flexCenter;
+        background-color: #f3d0c7;
+        height: 45px;
+
+        span {
+          font-weight: bold;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+
+  &-box-3 {
+    position: relative;
+    height: 60%;
+    width: 25vw;
+
+    img {
+      height: 75%;
+    }
+
+    h3 {
+      font-size: 25px;
+      margin-top: 10px;
+    }
+
+    p {
+      font-style: italic;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .tab-3 {
+      position: absolute;
+      top: -10%;
+      left: 10%;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      width: 20%;
+
+      &-upper {
+        @include flexCenter;
+        background-color: #c0e1cf;
+        height: 50px;
+
+        span {
+          font-family: "Fondamento", cursive;
+          font-size: 35px;
+        }
+      }
+
+      &-lower {
+        @include flexCenter;
+        background-color: #f3d0c7;
+        height: 45px;
+
+        span {
+          font-weight: bold;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}
+/* /FOURTH SECTION */
