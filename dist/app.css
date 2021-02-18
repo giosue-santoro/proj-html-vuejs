@@ -372,7 +372,10 @@ header .right-header ul li {
   justify-content: center;
   align-items: center;
   background-color: #f3d0c7;
-  height: 45px;
+  height: 75px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid rgba(0, 0, 0, 0);
 }
 .fourth-section-box-1 .tab-lower span {
   font-weight: bold;
@@ -420,6 +423,9 @@ header .right-header ul li {
   align-items: center;
   background-color: #f3d0c7;
   height: 45px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid rgba(0, 0, 0, 0);
 }
 .fourth-section-box-2 .tab-2-lower span {
   font-weight: bold;
@@ -466,6 +472,9 @@ header .right-header ul li {
   align-items: center;
   background-color: #f3d0c7;
   height: 45px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid rgba(0, 0, 0, 0);
 }
 .fourth-section-box-3 .tab-3-lower span {
   font-weight: bold;

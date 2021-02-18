@@ -136,7 +136,6 @@ header .right-header ul li {
 
 .slider .first-background .circles {
   position: absolute;
-  cursor: pointer;
   bottom: 5%;
   right: 45%;
   color: #e1c0b0;
@@ -144,6 +143,7 @@ header .right-header ul li {
 
 .slider .first-background .circles i {
   margin: 0 5px;
+  cursor: pointer;
 }
 
 .slider .prev,
@@ -197,6 +197,36 @@ header .right-header ul li {
 .main-section .second-row img {
   width: 100%;
   height: 100%;
+}
+
+.main-section .second-row .special-hover {
+  position: relative;
+}
+
+.main-section .second-row .special-hover:hover {
+  cursor: pointer;
+}
+
+.main-section .second-row .special-hover div {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+  line-height: 30px;
+  background-color: #fff;
+  padding: 20px;
+  width: 50%;
+  /* transition: 300ms linear; */
+}
+
+.main-section .second-row .special-hover div h4 {
+  font-size: 23px;
+}
+
+.main-section .second-row .special-hover div p {
+  font-size: 22px;
+  font-family: "Fondamento", cursive;
+  font-style: italic;
 }
 
 /* MAIN SECTION */
@@ -418,6 +448,13 @@ header .right-header ul li {
   padding: 20px;
   cursor: pointer;
   letter-spacing: 5px;
+}
+
+.third-section-content button:hover {
+  color: #fff;
+  background-color: #e1c0b0;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
 
 /* THIRD SECTION */

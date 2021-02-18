@@ -79,12 +79,12 @@
     }
     .circles {
       position: absolute;
-      cursor: pointer;
       bottom: 5%;
       right: 45%;
       color: #e1c0b0;
       i {
         margin: 0 5px;
+        cursor: pointer;
       }
     }
   }

@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="dist/app.css">
+    <link rel="stylesheet" href="src/app.css">
     <title>proj-html-vuejs</title>
 </head>
 <body>
@@ -41,16 +41,20 @@
         <main>
             <!-- SLIDER -->
             <div class="slider">
+
                 <div class="prev">
                     <i class="fas fa-angle-left"></i>
                 </div>
+
                 <div class="first-image">
                     <div class="first-background">
+
                         <div class="first-content">
                             <h1>Devotion that never <span>ends</span></h1>
                             <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</p>
                             <button>READ MORE</button>
                         </div>
+
                         <div class="big-img">
                             <div class="people">
                                 <img src="img/h-2-slider-img-15.png" alt="woman">
@@ -65,36 +69,50 @@
                                 <img src="img/h-2-slider-img-17.png" alt="multiple leaf" id="sixth-leaf">
                             </span>
                         </div>
+
                         <div class="circles">
                             <i class="fas fa-circle"></i>
                             <i class="fas fa-circle"></i>
                             <i class="fas fa-circle"></i>
                         </div>
+
                     </div>
                 </div>
+
                 <div class="next">
                     <i class="fas fa-angle-right"></i>
                 </div>
+
             </div>
             <!-- /SLIDER -->
             
             <!-- MAIN SECTION -->
             <div class="main-section">
+
                 <div class="first-row">
                     <div><img src="img/h-2-port-img-1.jpg" alt="FE"></div>
                     <div><img src="img/h-2-port-img-2.jpg" alt="Bike"></div>
                     <div><img src="img/h-2-port-img-3.jpg" alt="Book"></div>
                 </div>
+
                 <div class="second-row">
-                    <div><img src="img/h-2-port-img-4.jpg" alt="2nd-book"></div>
+                    <div class="special-hover" @mouseover="mouseOver" @mouseleave="mouseLeave">
+                        <img src="img/h-2-port-img-4.jpg" alt="2nd-book">
+                        <div v-if="active">
+                            <h4>Illustrations of novels</h4>
+                            <p>Illustration</p>
+                        </div>
+                    </div>
                     <div><img src="img/h-2-port-img-5.jpg" alt="phone"></div>
                     <div><img src="img/h-2-port-img-6.jpg" alt="girl"></div>
                 </div>
+
             </div>
             <!-- /MAIN SECTION -->
 
             <!-- SECOND SECTION -->
             <div class="second-section">
+
                 <h2>Working <span>process</span></h2>
                 <div class="second-section-paragraph">
 
@@ -197,18 +215,22 @@
         <!-- FOOTER -->
         <footer>
             <div class="footer-content">
+
                 <div class="footer-box">
                     <img src="img/logo-sidearea-1.png" alt="footer-logo">
                     <p>Let's Get Creative</p>
                 </div>
+
                 <div class="footer-box">
                     <p>maree.qode@gmail.com</p>
                     <p>+44645 321 789</p>
                 </div>
+
                 <div class="footer-box">
                     <p>Avenue d'Auderghem 10</p>
                     <p>1040 Brussels, Belgium</p>
                 </div>
+
                 <div class="last-box">
                     <p>Stay in touch with us</p>
                     <div class="footer-icons">
@@ -217,8 +239,8 @@
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-linkedin-in"></i>
                     </div>
-
                 </div>
+
             </div>
         </footer>
         <!-- /FOOTER -->
