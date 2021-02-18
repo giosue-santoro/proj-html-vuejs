@@ -41,9 +41,138 @@ header .right-header ul li {
   list-style-type: none;
 }
 
-.jumbotron {
-  border: 1px solid black;
-  height: 50vh;
+.slider {
+  position: relative;
+  height: 60vh;
   width: 100%;
+  background-color: #fbf9f9;
+}
+
+.slider .first-background {
+  width: 70%;
+  height: 60vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider .first-background .first-content {
+  width: 35%;
+}
+
+.slider .first-background .first-content h1 {
+  font-size: 60px;
+}
+
+.slider .first-background .first-content h1 span {
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.slider .first-background .first-content p {
+  line-height: 25px;
+  color: #a6a6a6;
+  margin-top: 20px;
+}
+
+.slider .first-background .first-content button {
+  border: 3px solid #e1c0b0;
+  background-color: transparent;
+  font-weight: bold;
+  padding: 20px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.slider .first-background .big-img {
+  width: 45%;
+  position: relative;
+}
+
+.slider .first-background .big-img .people img {
+  height: 35vh;
+}
+
+.slider .first-background .big-img span img {
+  height: 6vh;
+}
+
+.slider .first-background .big-img span #first-leaf {
+  position: absolute;
+  top: -5%;
+  left: 0;
+}
+
+.slider .first-background .big-img span #second-leaf {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+
+.slider .first-background .big-img span #third-leaf {
+  position: absolute;
+  top: -10%;
+  right: 15%;
+}
+
+.slider .first-background .big-img span #fourth-leaf {
+  position: absolute;
+  top: 40%;
+  left: -10%;
+}
+
+.slider .first-background .big-img span #sixth-leaf {
+  position: absolute;
+  right: 0;
+}
+
+.slider .first-background .circles {
+  position: absolute;
+  cursor: pointer;
+  bottom: 5%;
+  right: 45%;
+  color: #e1c0b0;
+}
+
+.slider .first-background .circles i {
+  margin: 0 5px;
+}
+
+.slider .prev,
+.slider .next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 2%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 40px;
+  cursor: pointer;
+  background-color: #e1c0b0;
+  height: 7%;
+  width: 2%;
+  border-radius: 50%;
+}
+
+.slider .next {
+  left: auto;
+  right: 2%;
 }
 /*# sourceMappingURL=app.css.map */
