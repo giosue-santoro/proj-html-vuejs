@@ -473,3 +473,32 @@ header .right-header ul li {
 }
 
 /* /FOURTH SECTION */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: #c0e1cf;
+}
+footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: 0 auto;
+}
+footer .footer-content .footer-box {
+  line-height: 40px;
+}
+footer .footer-content .last-box {
+  line-height: 70px;
+}
+footer .footer-content .last-box .footer-icons {
+  display: flex;
+  line-height: 20px;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+footer .footer-content .last-box .footer-icons i {
+  cursor: pointer;
+}

@@ -9,6 +9,11 @@
   align-items: center;
   justify-content: space-between;
 }
+@mixin flexEvenly {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
 @mixin differentFont {
   font-family: "Fondamento", cursive;
