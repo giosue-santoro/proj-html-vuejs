@@ -25,3 +25,9 @@ header .right-header ul {
 header .right-header ul li {
   list-style-type: none;
 }
+
+.jumbotron {
+  border: 1px solid black;
+  height: 50vh;
+  width: 100%;
+}
