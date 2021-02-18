@@ -1,0 +1,109 @@
+.slider {
+  position: relative;
+  height: 60vh;
+  width: 100%;
+
+  .first-background {
+    width: 70%;
+    height: 60vh;
+    margin: 0 auto;
+    @include flexBetween;
+
+    .first-content {
+      width: 35%;
+      h1 {
+        font-size: 60px;
+        span {
+          @include differentFont;
+        }
+      }
+      p {
+        line-height: 25px;
+        color: #a6a6a6;
+        margin-top: 20px;
+      }
+      button {
+        border: 3px solid #e1c0b0;
+        background-color: transparent;
+        font-weight: bold;
+        padding: 20px;
+        outline: none;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+    }
+
+    .big-img {
+      width: 45%;
+      position: relative;
+      .people {
+        img {
+          height: 35vh;
+        }
+      }
+      span {
+        img {
+          height: 6vh;
+        }
+        #first-leaf {
+          position: absolute;
+          top: -5%;
+          left: 0;
+        }
+        #second-leaf {
+          position: absolute;
+          top: 20%;
+          right: 5%;
+        }
+        #third-leaf {
+          position: absolute;
+          top: -10%;
+          right: 15%;
+        }
+        #fourth-leaf {
+          position: absolute;
+          top: 40%;
+          left: -10%;
+        }
+        // #fifth-leaf {
+        //   position: absolute;
+        //   top: -20px;
+        //   left: 15px;
+        // }
+        #sixth-leaf {
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+    .circles {
+      position: absolute;
+      cursor: pointer;
+      bottom: 5%;
+      right: 45%;
+      color: #e1c0b0;
+      i {
+        margin: 0 5px;
+      }
+    }
+  }
+  .prev,
+  .next {
+    @include flexCenter;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    cursor: pointer;
+    background-color: #e1c0b0;
+    height: 7%;
+    width: 2%;
+    border-radius: 50%;
+  }
+  .next {
+    left: auto;
+    right: 2%;
+  }
+}
