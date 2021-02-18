@@ -15,6 +15,7 @@ header {
       display: flex;
       justify-content: space-evenly;
       li {
+        cursor: pointer;
         list-style-type: none;
       }
     }

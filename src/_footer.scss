@@ -2,6 +2,7 @@ footer {
   @include flexCenter;
   height: 300px;
   background-color: #c0e1cf;
+  position: relative;
 
   .footer-content {
     @include flexEvenly;
@@ -25,6 +26,22 @@ footer {
           cursor: pointer;
         }
       }
+    }
+  }
+
+  .scroll-up {
+    @include flexCenter;
+    position: absolute;
+    bottom: 5%;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #c0e1cf;
+    cursor: pointer;
+
+    i {
+      color: #fff;
+      font-size: 30px;
     }
   }
 }

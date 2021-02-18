@@ -6,6 +6,18 @@
   font-family: "Lato", sans-serif;
 }
 
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,6 +50,7 @@ header .right-header ul {
 }
 
 header .right-header ul li {
+  cursor: pointer;
   list-style-type: none;
 }
 
@@ -216,7 +229,7 @@ header .right-header ul li {
   background-color: #fff;
   padding: 20px;
   width: 50%;
-  /* transition: 300ms linear; */
+  border: 1px solid #000;
 }
 
 .main-section .second-row .special-hover div h4 {
@@ -229,6 +242,34 @@ header .right-header ul li {
   font-style: italic;
 }
 
+.main-section .second-row-last-box {
+  position: relative;
+}
+
+.main-section .second-row-last-box .scroll-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #c0e1cf;
+  cursor: pointer;
+}
+
+.main-section .second-row-last-box .scroll-up i {
+  color: #fff;
+  font-size: 30px;
+}
+
 /* MAIN SECTION */
 /* SECOND SECTION */
 .second-section {
@@ -236,6 +277,7 @@ header .right-header ul li {
   background-size: 75vw;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
   height: 700px;
 }
 
@@ -400,6 +442,30 @@ header .right-header ul li {
   color: #a6a6a6;
 }
 
+.second-section .scroll-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 5%;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #c0e1cf;
+  cursor: pointer;
+}
+
+.second-section .scroll-up i {
+  color: #fff;
+  font-size: 30px;
+}
+
 /* SECOND SECTION */
 /* THIRD SECTION */
 .third-section {
@@ -443,7 +509,7 @@ header .right-header ul li {
   width: 200px;
   outline: none;
   border: none;
-  background-color: #d8f0e3;
+  background-color: #c0e1cf;
   font-weight: bold;
   padding: 20px;
   cursor: pointer;
@@ -470,6 +536,7 @@ header .right-header ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .fourth-section-box-1 {
@@ -678,6 +745,30 @@ header .right-header ul li {
   letter-spacing: 2px;
 }
 
+.fourth-section .scroll-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 5%;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #c0e1cf;
+  cursor: pointer;
+}
+
+.fourth-section .scroll-up i {
+  color: #fff;
+  font-size: 30px;
+}
+
 /* /FOURTH SECTION */
 footer {
   display: -webkit-box;
@@ -691,6 +782,7 @@ footer {
           align-items: center;
   height: 300px;
   background-color: #c0e1cf;
+  position: relative;
 }
 
 footer .footer-content {
@@ -728,5 +820,29 @@ footer .footer-content .last-box .footer-icons {
 
 footer .footer-content .last-box .footer-icons i {
   cursor: pointer;
+}
+
+footer .scroll-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 5%;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #c0e1cf;
+  cursor: pointer;
+}
+
+footer .scroll-up i {
+  color: #fff;
+  font-size: 30px;
 }
 /*# sourceMappingURL=app.css.map */
