@@ -37,51 +37,61 @@
     .big-img {
       width: 45%;
       position: relative;
+
       .people {
         img {
           height: 35vh;
         }
       }
+
       span {
         img {
           height: 6vh;
         }
+
         #first-leaf {
           position: absolute;
           top: -5%;
           left: 0;
         }
+
         #second-leaf {
           position: absolute;
           top: 20%;
           right: 5%;
         }
+
         #third-leaf {
           position: absolute;
           top: -10%;
           right: 15%;
         }
+
         #fourth-leaf {
           position: absolute;
           top: 40%;
           left: -10%;
         }
+
         // #fifth-leaf {
         //   position: absolute;
         //   top: -20px;
         //   left: 15px;
         // }
+
         #sixth-leaf {
           position: absolute;
           right: 0;
         }
       }
     }
+
     .circles {
       position: absolute;
       bottom: 5%;
       right: 45%;
       color: #e1c0b0;
+
       i {
         margin: 0 5px;
         cursor: pointer;

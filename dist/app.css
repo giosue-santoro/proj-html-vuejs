@@ -5,6 +5,17 @@
   font-family: "Lato", sans-serif;
 }
 
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -23,6 +34,7 @@ header .right-header ul {
   justify-content: space-evenly;
 }
 header .right-header ul li {
+  cursor: pointer;
   list-style-type: none;
 }
 
@@ -100,13 +112,13 @@ header .right-header ul li {
 }
 .slider .first-background .circles {
   position: absolute;
-  cursor: pointer;
   bottom: 5%;
   right: 45%;
   color: #e1c0b0;
 }
 .slider .first-background .circles i {
   margin: 0 5px;
+  cursor: pointer;
 }
 .slider .prev,
 .slider .next {
@@ -134,9 +146,16 @@ header .right-header ul li {
 .main-section .first-row {
   display: flex;
 }
-.main-section .first-row img {
+.main-section .first-row-img {
   width: 100%;
   height: 100%;
+}
+.main-section .first-row-img-last .floating-img {
+  height: 100px;
+  width: 100px;
+}
+.main-section .first-row-img-last .floating-img img {
+  height: 50px;
 }
 .main-section .second-row {
   display: flex;
@@ -144,6 +163,49 @@ header .right-header ul li {
 .main-section .second-row img {
   width: 100%;
   height: 100%;
+}
+.main-section .second-row .special-hover {
+  position: relative;
+}
+.main-section .second-row .special-hover:hover {
+  cursor: pointer;
+}
+.main-section .second-row .special-hover div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-40%);
+  line-height: 30px;
+  background-color: #fff;
+  padding: 20px;
+  width: 50%;
+  border: 1px solid #000;
+}
+.main-section .second-row .special-hover div h4 {
+  font-size: 23px;
+}
+.main-section .second-row .special-hover div p {
+  font-size: 22px;
+  font-family: "Fondamento", cursive;
+  font-style: italic;
+}
+.main-section .second-row-last-box {
+  position: relative;
+}
+.main-section .second-row-last-box .scroll-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #c0e1cf;
+  cursor: pointer;
+}
+.main-section .second-row-last-box .scroll-up i {
+  color: #fff;
+  font-size: 30px;
 }
 
 /* MAIN SECTION */
@@ -153,6 +215,7 @@ header .right-header ul li {
   background-size: 75vw;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
   height: 700px;
 }
 .second-section h2 {
@@ -283,6 +346,22 @@ header .right-header ul li {
   line-height: 20px;
   color: #a6a6a6;
 }
+.second-section .scroll-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #c0e1cf;
+  cursor: pointer;
+}
+.second-section .scroll-up i {
+  color: #fff;
+  font-size: 30px;
+}
 
 /* SECOND SECTION */
 /* THIRD SECTION */
@@ -316,11 +395,16 @@ header .right-header ul li {
   width: 200px;
   outline: none;
   border: none;
-  background-color: #d8f0e3;
+  background-color: #c0e1cf;
   font-weight: bold;
   padding: 20px;
   cursor: pointer;
   letter-spacing: 5px;
+}
+.third-section-content button:hover {
+  color: #fff;
+  background-color: #e1c0b0;
+  transition: 0.3s ease-out;
 }
 
 /* THIRD SECTION */
@@ -330,12 +414,13 @@ header .right-header ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .fourth-section-box-1 {
   position: relative;
-  height: 60%;
+  height: 55%;
   width: 25vw;
-  margin-right: 20px;
+  margin-right: 50px;
 }
 .fourth-section-box-1 img {
   height: 75%;
@@ -352,7 +437,7 @@ header .right-header ul li {
 .fourth-section-box-1 .tab {
   position: absolute;
   top: -10%;
-  left: 10%;
+  left: 5%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 20%;
 }
@@ -372,10 +457,7 @@ header .right-header ul li {
   justify-content: center;
   align-items: center;
   background-color: #f3d0c7;
-  height: 75px;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 25px solid rgba(0, 0, 0, 0);
+  height: 45px;
 }
 .fourth-section-box-1 .tab-lower span {
   font-weight: bold;
@@ -383,9 +465,9 @@ header .right-header ul li {
 }
 .fourth-section-box-2 {
   position: relative;
-  height: 60%;
+  height: 55%;
   width: 25vw;
-  margin-right: 20px;
+  margin-right: 50px;
 }
 .fourth-section-box-2 img {
   height: 75%;
@@ -402,7 +484,7 @@ header .right-header ul li {
 .fourth-section-box-2 .tab-2 {
   position: absolute;
   top: -10%;
-  left: 10%;
+  left: 5%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 20%;
 }
@@ -423,9 +505,6 @@ header .right-header ul li {
   align-items: center;
   background-color: #f3d0c7;
   height: 45px;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 25px solid rgba(0, 0, 0, 0);
 }
 .fourth-section-box-2 .tab-2-lower span {
   font-weight: bold;
@@ -433,7 +512,7 @@ header .right-header ul li {
 }
 .fourth-section-box-3 {
   position: relative;
-  height: 60%;
+  height: 55%;
   width: 25vw;
 }
 .fourth-section-box-3 img {
@@ -451,7 +530,7 @@ header .right-header ul li {
 .fourth-section-box-3 .tab-3 {
   position: absolute;
   top: -10%;
-  left: 10%;
+  left: 5%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 20%;
 }
@@ -472,13 +551,26 @@ header .right-header ul li {
   align-items: center;
   background-color: #f3d0c7;
   height: 45px;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 25px solid rgba(0, 0, 0, 0);
 }
 .fourth-section-box-3 .tab-3-lower span {
   font-weight: bold;
   letter-spacing: 2px;
+}
+.fourth-section .scroll-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5%;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #c0e1cf;
+  cursor: pointer;
+}
+.fourth-section .scroll-up i {
+  color: #fff;
+  font-size: 30px;
 }
 
 /* /FOURTH SECTION */
@@ -488,6 +580,7 @@ footer {
   align-items: center;
   height: 300px;
   background-color: #c0e1cf;
+  position: relative;
 }
 footer .footer-content {
   display: flex;
@@ -510,4 +603,20 @@ footer .footer-content .last-box .footer-icons {
 }
 footer .footer-content .last-box .footer-icons i {
   cursor: pointer;
+}
+footer .scroll-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #c0e1cf;
+  cursor: pointer;
+}
+footer .scroll-up i {
+  color: #fff;
+  font-size: 30px;
 }

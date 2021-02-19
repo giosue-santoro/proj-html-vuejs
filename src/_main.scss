@@ -3,10 +3,20 @@
   .first-row {
     display: flex;
 
-    img {
+    &-img {
       width: 100%;
       height: 100%;
     }
+
+    // &-img-last {
+    //   .floating-img {
+    //     height: 100px;
+    //     width: 100px;
+    //     img {
+    //       height: 50px;
+    //     }
+    //   }
+    // }
   }
 
   .second-row {
@@ -298,9 +308,9 @@
 
   &-box-1 {
     position: relative;
-    height: 60%;
+    height: 55%;
     width: 25vw;
-    margin-right: 20px;
+    margin-right: 50px;
 
     img {
       height: 75%;
@@ -320,7 +330,7 @@
     .tab {
       position: absolute;
       top: -10%;
-      left: 10%;
+      left: 5%;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       width: 20%;
 
@@ -354,9 +364,9 @@
 
   &-box-2 {
     position: relative;
-    height: 60%;
+    height: 55%;
     width: 25vw;
-    margin-right: 20px;
+    margin-right: 50px;
 
     img {
       height: 75%;
@@ -376,7 +386,7 @@
     .tab-2 {
       position: absolute;
       top: -10%;
-      left: 10%;
+      left: 5%;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       width: 20%;
 
@@ -410,7 +420,7 @@
 
   &-box-3 {
     position: relative;
-    height: 60%;
+    height: 55%;
     width: 25vw;
 
     img {
@@ -431,7 +441,7 @@
     .tab-3 {
       position: absolute;
       top: -10%;
-      left: 10%;
+      left: 5%;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       width: 20%;
 
