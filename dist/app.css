@@ -263,7 +263,7 @@ header .right-header ul li {
   line-height: 20px;
   color: #a6a6a6;
 }
-.second-section-paragraph .scroll-up {
+.second-section .scroll-up {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,7 +275,7 @@ header .right-header ul li {
   background-color: #c0e1cf;
   cursor: pointer;
 }
-.second-section-paragraph .scroll-up i {
+.second-section .scroll-up i {
   color: #fff;
   font-size: 30px;
 }
