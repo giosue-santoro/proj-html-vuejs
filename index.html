@@ -139,36 +139,12 @@
                 <h2>Working <span>process</span></h2>
                 <div class="second-section-paragraph">
 
-                    <div class="second-section-paragraph-1">
+                    <div class="second-section-paragraph-1" v-for="(el) in ideasDrawings">
                         <div>
-                            <i class="fas fa-lightbulb"></i>
+                            <span v-html="el.icon">
                         </div>
-                        <h3>First there is an idea</h3>
-                        <p>Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself</p>
-                    </div>
-
-                    <div class="second-section-paragraph-2">
-                        <div>
-                            <i class="far fa-comment"></i>
-                        </div>
-                        <h3>Then we talk about</h3>
-                        <p>Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself</p>
-                    </div>
-
-                    <div class="second-section-paragraph-3">
-                        <div>
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <h3>And we think about</h3>
-                        <p>Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself</p>
-                    </div>
-
-                    <div class="second-section-paragraph-4">
-                        <div>
-                            <i class="fas fa-pencil-alt"></i>
-                        </div>
-                        <h3>So we draw along</h3>
-                        <p>Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself</p>
+                        <h3>{{el.title}}</h3>
+                        <p>{{el.paragraph}}</p>
                     </div>
                     
                 </div>
@@ -193,44 +169,16 @@
             <!-- FOURTH SECTION -->
             <div class="fourth-section">
 
-                <div class="fourth-section-box-1">
-                    <img src="img/h-2-blog-img-1.jpg" alt="Banana">
-                    <h3>This way, loves: a detailed guide through new design</h3>
-                    <p>By Emily Fields</p>
+                <div class="fourth-section-box" v-for="(el) in blogPosts">
+                    <img :src="el.background">
+                    <h3>{{el.title}}</h3>
+                    <p>{{el.author}}</p>
                     <div class="tab">
                         <div class="tab-upper">
-                            <span>07</span>
+                            <span>{{el.day}}</span>
                         </div>
                         <div class="tab-lower">
-                            <span>MAY '19</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="fourth-section-box-2">
-                    <img src="img/h-2-blog-img-2.jpg" alt="Buildings">
-                    <h3>I try to give people a different way of looking at art</h3>
-                    <p>By Emily Fields</p>
-                    <div class="tab-2">
-                        <div class="tab-2-upper">
-                            <span>07</span>
-                        </div>
-                        <div class="tab-2-lower">
-                            <span>MAY '19</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="fourth-section-box-3">
-                    <img src="img/h-2-blog-img-3.jpg" alt="Girl">
-                    <h3>Introduce Richard Laperrière of those amazing features</h3>
-                    <p>By Emily Fields</p>
-                    <div class="tab-3">
-                        <div class="tab-3-upper">
-                            <span>07</span>
-                        </div>
-                        <div class="tab-3-lower">
-                            <span>MAY '19</span>
+                            <span>{{el.year}}</span>
                         </div>
                     </div>
                 </div>
