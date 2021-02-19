@@ -24,6 +24,9 @@ footer {
 
         i {
           cursor: pointer;
+          &:hover {
+            color: #fff;
+          }
         }
       }
     }

@@ -105,6 +105,13 @@ header .right-header ul li {
   letter-spacing: 5px;
 }
 
+.slider .first-background .first-content button:hover {
+  color: #fff;
+  background-color: #e1c0b0;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
 .slider .first-background .big-img {
   width: 45%;
   position: relative;
@@ -229,7 +236,6 @@ header .right-header ul li {
   background-color: #fff;
   padding: 20px;
   width: 50%;
-  border: 1px solid #000;
 }
 
 .main-section .second-row .special-hover div h4 {
@@ -820,6 +826,10 @@ footer .footer-content .last-box .footer-icons {
 
 footer .footer-content .last-box .footer-icons i {
   cursor: pointer;
+}
+
+footer .footer-content .last-box .footer-icons i:hover {
+  color: #fff;
 }
 
 footer .scroll-up {

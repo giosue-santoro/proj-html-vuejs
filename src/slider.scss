@@ -31,6 +31,11 @@
         cursor: pointer;
         margin-top: 20px;
         letter-spacing: 5px;
+        &:hover {
+          color: #fff;
+          background-color: #e1c0b0;
+          transition: 0.3s ease-out;
+        }
       }
     }
 
