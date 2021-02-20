@@ -16,6 +16,10 @@
   opacity: 1;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -118,13 +122,13 @@ header .right-header ul li {
   position: absolute;
   right: 0;
 }
-.slider .first-background .circles {
+.slider .circles {
   position: absolute;
   bottom: 5%;
   right: 47%;
   color: #e1c0b0;
 }
-.slider .first-background .circles i {
+.slider .circles i {
   margin: 0 5px;
   font-size: 14px;
   cursor: pointer;

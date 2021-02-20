@@ -5,6 +5,19 @@ new Vue ({
     data: {
 
         // active: false,
+        
+        sliderIndex: 0,
+
+        navBar : [
+            {
+              home : 'HOME',
+              pages : 'PAGES',
+              portfolio : 'PORTFOLIO',
+              blog : 'BLOG',
+              shop : 'SHOP',
+              elements : 'ELEMENTS',
+            }      
+        ],
 
         blogPosts: [
             {

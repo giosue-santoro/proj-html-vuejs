@@ -90,20 +90,58 @@
         }
       }
     }
+  }
 
-    .circles {
-      position: absolute;
-      bottom: 5%;
-      right: 47%;
-      color: #e1c0b0;
+  // .second-background {
+  //   width: 70%;
+  //   height: 60vh;
+  //   margin: 0 auto;
+  //   @include flexBetween;
 
-      i {
-        margin: 0 5px;
-        font-size: 14px;
-        cursor: pointer;
-      }
+  //   .second-content {
+  //     width: 35%;
+  //     h1 {
+  //       font-size: 60px;
+  //       span {
+  //         @include differentFont;
+  //       }
+  //     }
+  //     p {
+  //       line-height: 25px;
+  //       color: #a6a6a6;
+  //       margin-top: 20px;
+  //     }
+  //     button {
+  //       border: 3px solid #e1c0b0;
+  //       background-color: transparent;
+  //       font-weight: bold;
+  //       padding: 20px;
+  //       outline: none;
+  //       cursor: pointer;
+  //       margin-top: 20px;
+  //       letter-spacing: 5px;
+  //       &:hover {
+  //         color: #fff;
+  //         background-color: #e1c0b0;
+  //         transition: 0.3s ease-out;
+  //       }
+  //     }
+  //   }
+  // }
+
+  .circles {
+    position: absolute;
+    bottom: 5%;
+    right: 47%;
+    color: #e1c0b0;
+
+    i {
+      margin: 0 5px;
+      font-size: 14px;
+      cursor: pointer;
     }
   }
+
   .prev,
   .next {
     @include flexCenter;

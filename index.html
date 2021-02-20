@@ -24,13 +24,13 @@
             </div>
 
             <div class="right-header">
-                <ul>
-                    <li>HOME</li>
-                    <li>PAGES</li>
-                    <li>PORTFOLIO</li>
-                    <li>BLOG</li>
-                    <li>SHOP</li>
-                    <li>ELEMENTS</li>
+                <ul v-for="(el) in navBar">
+                    <li>{{el.home}}</li>
+                    <li>{{el.pages}}</li>
+                    <li>{{el.portfolio}}</li>
+                    <li>{{el.blog}}</li>
+                    <li>{{el.shop}}</li>
+                    <li>{{el.elements}}</li>
                     <li><img src="img/svg-1.svg" alt="hamburger-menu"></li>
                 </ul>
             </div>
@@ -78,6 +78,39 @@
 
                     </div>
                 </div>
+
+                <!-- <div class="second-image">
+                    <div class="second-background">
+
+                        <div class="second-content">
+                            <h1>Devotion that never <span>ends</span></h1>
+                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</p>
+                            <button>READ MORE</button>
+                        </div>
+
+                        <div class="big-img">
+                            <div class="people">
+                                <img src="img/h-2-slider-img-15.png" alt="woman">
+                                <img src="img/h-2-slider-img-16.png" alt="man">
+                            </div>
+                            <span>
+                                <img src="img/short-slider-rev-1-img-2.png" alt="red leaf left" id="first-leaf">
+                                <img src="img/short-slider-rev-1-img-6.png" alt="red leaf right" id="second-leaf">
+                                <img src="img/h-2-slider-img-14.png" alt="purple leaf" id="third-leaf">
+                                <img src="img/h-2-slider-img-12.png" alt="brown leaf" id="fourth-leaf">
+                                <img src="img/h-2-slider-img-13.png" alt="green leaf" id="fifth-leaf">
+                                <img src="img/h-2-slider-img-17.png" alt="multiple leaf" id="sixth-leaf">
+                            </span>
+                        </div>
+
+                        <div class="circles">
+                            <i class="fas fa-circle"></i>
+                            <i class="fas fa-circle"></i>
+                            <i class="fas fa-circle"></i>
+                        </div>
+
+                    </div>
+                </div> -->
 
                 <div class="next">
                     <i class="fas fa-angle-right"></i>
