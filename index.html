@@ -31,7 +31,7 @@
                     <li>{{el.blog}}</li>
                     <li>{{el.shop}}</li>
                     <li>{{el.elements}}</li>
-                    <li><img src="img/svg-1.svg" alt="hamburger-menu"></li>
+                    <li><img :src="el.hamburger" alt="hamburger-menu"></li>
                 </ul>
             </div>
         </header>
@@ -42,81 +42,50 @@
             <!-- SLIDER -->
             <div class="slider">
 
-                <div class="prev">
-                    <i class="fas fa-angle-left"></i>
-                </div>
+                <div class="slides">
+                    <transition-group name="slide" mode="out-in" enter-class="slide-in" leave-class="slide-out" enter-active-class="animated slide-in-active" leave-active-class="animated slide-out-active">
+                        <div v-for="index in slides" v-if="index == active" :key="index">
+                            <div class="first-background">
 
-                <div class="first-image">
-                    <div class="first-background">
-
-                        <div class="first-content">
-                            <h1>Devotion that never <span>ends</span></h1>
-                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</p>
-                            <button>READ MORE</button>
-                        </div>
-
-                        <div class="big-img">
-                            <div class="people">
-                                <img src="img/h-2-slider-img-15.png" alt="woman">
-                                <img src="img/h-2-slider-img-16.png" alt="man">
+                                <div class="first-content">
+                                    <h1>{{slider[index].title}} <span>{{slider[index].specialFont}}</span></h1>
+                                    <p>{{slider[index].paragraph}}</p>
+                                    <button>{{slider[index].button}}</button>
+                                </div>
+                                
+                                <div class="big-img">
+                                    <div class="people">
+                                        <img :src="slider[index].firstPerson">
+                                        <img :src="slider[index].secondPerson">
+                                    </div>
+                                    <span>
+                                        <img :src="slider[index].firstLeaf" alt="red leaf left" id="first-leaf">
+                                        <img :src="slider[index].secondLeaf" alt="red leaf right" id="second-leaf">
+                                        <img :src="slider[index].thirdLeaf" alt="purple leaf" id="third-leaf">
+                                        <img :src="slider[index].fourthLeaf" alt="brown leaf" id="fourth-leaf">
+                                        <img :src="slider[index].fifthLeaf" alt="green leaf" id="fifth-leaf">
+                                        <img :src="slider[index].sixthLeaf" alt="multiple leaf" id="sixth-leaf">
+                                    </span>
+                                </div>
+                                
                             </div>
-                            <span>
-                                <img src="img/short-slider-rev-1-img-2.png" alt="red leaf left" id="first-leaf">
-                                <img src="img/short-slider-rev-1-img-6.png" alt="red leaf right" id="second-leaf">
-                                <img src="img/h-2-slider-img-14.png" alt="purple leaf" id="third-leaf">
-                                <img src="img/h-2-slider-img-12.png" alt="brown leaf" id="fourth-leaf">
-                                <img src="img/h-2-slider-img-13.png" alt="green leaf" id="fifth-leaf">
-                                <img src="img/h-2-slider-img-17.png" alt="multiple leaf" id="sixth-leaf">
-                            </span>
                         </div>
-
-                        <div class="circles">
-                            <i class="fas fa-circle"></i>
-                            <i class="fas fa-circle"></i>
-                            <i class="fas fa-circle"></i>
-                        </div>
-
-                    </div>
+                    </transition-group>
                 </div>
 
-                <!-- <div class="second-image">
-                    <div class="second-background">
+                <span class="prev" click="move(-1)">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </span>
 
-                        <div class="second-content">
-                            <h1>Devotion that never <span>ends</span></h1>
-                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</p>
-                            <button>READ MORE</button>
-                        </div>
+                <span class="next" @click="move(1)">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </span>
 
-                        <div class="big-img">
-                            <div class="people">
-                                <img src="img/h-2-slider-img-15.png" alt="woman">
-                                <img src="img/h-2-slider-img-16.png" alt="man">
-                            </div>
-                            <span>
-                                <img src="img/short-slider-rev-1-img-2.png" alt="red leaf left" id="first-leaf">
-                                <img src="img/short-slider-rev-1-img-6.png" alt="red leaf right" id="second-leaf">
-                                <img src="img/h-2-slider-img-14.png" alt="purple leaf" id="third-leaf">
-                                <img src="img/h-2-slider-img-12.png" alt="brown leaf" id="fourth-leaf">
-                                <img src="img/h-2-slider-img-13.png" alt="green leaf" id="fifth-leaf">
-                                <img src="img/h-2-slider-img-17.png" alt="multiple leaf" id="sixth-leaf">
-                            </span>
-                        </div>
+                <ul class="dots">
+                    <li  v-for="(dot, index) in slides" :class="{ active: ++index === active }" @click="jump(index)"></li>
+                </ul>
 
-                        <div class="circles">
-                            <i class="fas fa-circle"></i>
-                            <i class="fas fa-circle"></i>
-                            <i class="fas fa-circle"></i>
-                        </div>
-
-                    </div>
-                </div> -->
-
-                <div class="next">
-                    <i class="fas fa-angle-right"></i>
-                </div>
-
-            </div>
+            </div>    
             <!-- /SLIDER -->
             
             <!-- MAIN SECTION -->

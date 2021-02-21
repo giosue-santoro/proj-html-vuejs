@@ -4,9 +4,8 @@ new Vue ({
 
     data: {
 
-        // active: false,
-        
-        sliderIndex: 0,
+        slides: 2,
+        active: 1,
 
         navBar : [
             {
@@ -16,7 +15,55 @@ new Vue ({
               blog : 'BLOG',
               shop : 'SHOP',
               elements : 'ELEMENTS',
+              hamburger: 'img/svg-1.svg',
             }      
+        ],
+
+        slider: [
+            {
+                title: 'Devotion that never',
+                specialFont: 'ends',
+                paragraph: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.',
+                button: 'READ MORE',
+                firstPerson: 'img/h-2-slider-img-11.png',
+                secondPerson: '',
+                hamburger: 'img/svg-1.svg',
+                hamburger: 'img/svg-1.svg',
+                hamburger: 'img/svg-1.svg',
+                hamburger: 'img/svg-1.svg',
+                hamburger: 'img/svg-1.svg',
+                hamburger: 'img/svg-1.svg',
+            },
+
+            {
+                title: 'Projects made with',
+                specialFont: 'love',
+                paragraph: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.',
+                button: 'READ MORE',
+                firstPerson: 'img/h-2-slider-img-11.png',
+                secondPerson: '',
+                firstLeaf: 'img/short-slider-rev-1-img-2.png',
+                secondLeaf: 'img/short-slider-rev-1-img-6.png',
+                thirdLeaf: 'img/h-2-slider-img-14.png',
+                fourthLeaf: 'img/h-2-slider-img-17.png',
+                fifthLeaf: 'img/h-2-slider-img-12.png',
+                sixthLeaf: 'img/h-2-slider-img-13.png',
+            },
+            
+            {
+                title: 'Our new folio full of',
+                specialFont: 'joy',
+                paragraph: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.',
+                button: 'READ MORE',
+                firstPerson: 'img/short-slider-rev-1-img-3.png',
+                secondPerson: '',
+                firstLeaf: 'img/h-2-slider-img-12.png',
+                secondLeaf: 'img/short-slider-rev-1-img-6.png',
+                thirdLeaf: 'img/h-2-slider-img-14.png',
+                fourthLeaf: 'img/short-slider-rev-1-img-9.png',
+                fifthLeaf: 'img/short-slider-rev-1-img-1.png',
+                sixthLeaf: 'img/h-2-slider-img-13.png',
+            }
         ],
 
         blogPosts: [
@@ -75,14 +122,6 @@ new Vue ({
 
     methods: {
 
-        // mouseOver: function() {
-        //     this.active = true
-        // },
-
-        // mouseLeave: function() {
-        //     this.active = false;
-        // },
-
         fadeIn: function() {
             const target = document.querySelector('.placeholder');
             target.classList.add('visible');
@@ -95,7 +134,20 @@ new Vue ({
 
         scrollTop: function() {
             document.body.scrollIntoView({behavior: 'smooth', block: 'start'});
-        }
+        },
+
+        move(amount) {
+            let newActive;
+            const newIndex = this.active + amount;
+
+            if (newIndex > this.slides) newActive = 1;
+            if (newIndex === 0) newActive = this.slides;
+            this.active = newActive || newIndex;
+        },
+
+        jump(index) {
+            this.active = index
+        },
 
     }   
 })
