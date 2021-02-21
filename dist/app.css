@@ -185,7 +185,7 @@ header .right-header ul li {
   font-weight: bold;
 }
 .slider .slides .animated {
-  transition: all 400ms;
+  transition: all 0;
   position: absolute;
   transform: translate(-50%, -50%);
 }
