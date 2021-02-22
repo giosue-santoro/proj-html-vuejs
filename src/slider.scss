@@ -176,7 +176,7 @@
     }
 
     .slide-in-active {
-      transition-delay: 150ms;
+      transition-delay: 200ms;
     }
 
     .slide-out {
@@ -185,7 +185,8 @@
 
     .slide-out-active {
       opacity: 0;
-      transform: translate(-60%, -50%);
+      transition: all 0;
+      transform: translateX(-60%);
     }
   }
 

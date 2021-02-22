@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/app.css">
+    <script src="js/script.js" defer></script>
     <title>proj-html-vuejs</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
             </div>
 
             <div class="right-header">
-                <ul v-for="(el) in navBar">
+                <ul v-for="el in navBar">
                     <li>{{el.home}}</li>
                     <li>{{el.pages}}</li>
                     <li>{{el.portfolio}}</li>
@@ -141,7 +142,7 @@
                 <h2>Working <span>process</span></h2>
                 <div class="second-section-paragraph">
 
-                    <div class="second-section-paragraph-1" v-for="(el) in ideasDrawings">
+                    <div class="second-section-paragraph-1" v-for="el in ideasDrawings">
                         <div>
                             <span v-html="el.icon">
                         </div>
@@ -171,7 +172,7 @@
             <!-- FOURTH SECTION -->
             <div class="fourth-section">
 
-                <div class="fourth-section-box" v-for="(el) in blogPosts">
+                <div class="fourth-section-box" v-for="el in blogPosts">
                     <img :src="el.background">
                     <h3>{{el.title}}</h3>
                     <p>{{el.author}}</p>
@@ -234,6 +235,5 @@
     </div>
     <!-- /VUE -->
 
-    <script src="js/script.js"></script>
 </body>
 </html>

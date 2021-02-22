@@ -27,12 +27,12 @@ new Vue ({
                 button: 'READ MORE',
                 firstPerson: 'img/h-2-slider-img-11.png',
                 secondPerson: '',
-                hamburger: 'img/svg-1.svg',
-                hamburger: 'img/svg-1.svg',
-                hamburger: 'img/svg-1.svg',
-                hamburger: 'img/svg-1.svg',
-                hamburger: 'img/svg-1.svg',
-                hamburger: 'img/svg-1.svg',
+                firstLeaf: 'img/short-slider-rev-1-img-2.png',
+                secondLeaf: 'img/short-slider-rev-1-img-6.png',
+                thirdLeaf: 'img/h-2-slider-img-14.png',
+                fourthLeaf: 'img/h-2-slider-img-17.png',
+                fifthLeaf: 'img/h-2-slider-img-12.png',
+                sixthLeaf: 'img/h-2-slider-img-13.png',
             },
 
             {
@@ -94,7 +94,7 @@ new Vue ({
 
         ideasDrawings: [
             {
-                icon: '<i class="fas fa-lightbulb""></i>',
+                icon: '<i class="fas fa-lightbulb"></i>',
                 title:'First there is an idea',
                 paragraph:'Lorem ipsum dolor sit, conetu adipisc sed be et ore aliqua pleasure itself'
             },

@@ -1,7 +1,7 @@
 footer {
   @include flexCenter;
   height: 300px;
-  background-color: #c0e1cf;
+  background-color: #f77b72;
   position: relative;
 
   .footer-content {
@@ -43,7 +43,7 @@ footer {
     right: 20px;
     width: 50px;
     height: 50px;
-    background-color: #c0e1cf;
+    background-color: #f77b72;
     cursor: pointer;
 
     i {
