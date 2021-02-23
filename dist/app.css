@@ -427,29 +427,37 @@ header .right-header ul li {
   margin-top: 10px;
 }
 .fourth-section-box .tab {
-  position: absolute;
-  top: -10%;
-  left: 5%;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  width: 20%;
-}
-.fourth-section-box .tab-upper {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 80px;
+  height: 100px;
   background-color: #f77b72;
-  height: 50px;
+  position: absolute;
+  top: -2%;
+  left: 5%;
+}
+.fourth-section-box .tab:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: -40px;
+  border-left: 40px solid #f3d0c7;
+  border-right: 40px solid #f3d0c7;
+  border-bottom: 40px solid transparent;
 }
 .fourth-section-box .tab-upper span {
   font-family: "Fondamento", cursive;
-  font-size: 35px;
+  font-size: 30px;
 }
 .fourth-section-box .tab-lower {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f3d0c7;
-  height: 45px;
+  height: 30px;
 }
 .fourth-section-box .tab-lower span {
   font-weight: bold;
